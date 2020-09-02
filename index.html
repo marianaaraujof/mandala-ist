@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Unidade de Saúde da Família Novo Mundo</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"
+		type="text/css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/KBmapmarkers.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    
+</head>
+<body>
+
+    <section class="accessibility-bar-wrapper">
+        <div class="container">
+            <div>
+                <a
+                    href="#mandala"
+                    class="d-inline-block"
+                    accesskey="1"
+                    title="Link para ir ao conteúdo"
+                    ><span class="numero-acessibilidade">1</span> Ir para o conteúdo </a
+                    >
+                <a
+                    href="#footer"
+                    class="d-inline-block"
+                    accesskey="3"
+                    title="Ir para o rodapé"
+                    ><span class="numero-acessibilidade">2</span>Ir para o rodapé </a
+                >
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                <label class="custom-control-label" for="darkSwitch">Alto Contraste</label>
+            </div>
+        </div>
+    </section>
+    <header>
+        <div class="container">
+            <img class="logo-sifilis" width="140" height="40" src="images/logo-menu.png">
+            <h1>UNIDADE DE SAÚDE DA FAMÍLIA NOVO MUNDO</h1>
+        </div>
+    </header>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+
+    <section class="KBmap" id="mandala"></section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/KBmapmarkers.js"></script>
+    <script src="js/dark-mode-switch.min.js"></script>
+    
+    <script>
+        var json = {
+            "mapMarker1": {
+                "cordX": "48",
+                "cordY": "0",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Ana Sofia",
+                    "content": "<p>Gerente da USF de Novo Mundo, enfermeira, muito responsável e combativa, sempre buscando melhorias para a USF.</p>"
+                }
+            },
+            "mapMarker2": {
+                "cordX": "76",
+                "cordY": "7",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Ivan",
+                    "content": "<p>Médico de saúde da família, pai de Reinaldo, homem de meia idade, defensor de um atendimento humanizado, muito estudioso, e sempre atento às necessidades dos usuários.</p>"
+                }
+            },
+            "mapMarker3": {
+                "cordX": "95",
+                "cordY": "29",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Roberta",
+                    "content": "<p>Médica residente de saúde da família, está no 1º ano de residência, muito questionadora e idealista. Forte defensora do SUS, e da estratégia de saúde da família.</p>"
+                }
+            },
+            "mapMarker4": {
+                "cordX": "100",
+                "cordY": "57",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Susiene",
+                    "content": "<p>Enfermeira, jovem, recém-chegada a USF, entusiasta defensora do SUS, tem grande experiência em Estratégia de Saúde da Família </p>"
+                }
+            },
+            "mapMarker5": {
+                "cordX": "89",
+                "cordY": "83",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Maurício",
+                    "content": "<p>Enfermeiro, recém-formado, tem dificuldade em acompanhar o ritmo de trabalho, mas busca sempre oferecer um atendimento qualificado, e sempre procura o apoio de Susiene. </p>"
+                }
+            },
+            "mapMarker6": {
+                "cordX": "64",
+                "cordY": "100",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Maria do Céu",
+                    "content": "<p> Enfermeira, foi a primeira profissional a trabalhar na USF, tem dificuldade de relacionamento com parte da equipe, pois se julga a dona do território, e tem bastante acesso a comunidade de novo mundo. Está em processo de aposentadoria.</p>"
+                }
+            },
+            "mapMarker7": {
+                "cordX": "37",
+                "cordY": "100",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Eliane",
+                    "content": "<p>ACS, competente, sempre focada no trabalho, reconhecida pela comunidade por sua habilidade de resolver problemas. </p>"
+                }
+            },
+            "mapMarker8": {
+                "cordX": "12",
+                "cordY": "85",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Tomaz",
+                    "content": "<p>ACS, muito atencioso com os usuários/as, sempre alegre e fazendo piadas, faz faculdade de medicina, e sonha um dia se tornar pediatra. </p>"
+                }
+            },
+            "mapMarker9": {
+                "cordX": "0",
+                "cordY": "57",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Robson",
+                    "content": "<p>Odontólogo, veio transferido de uma outra unidade, tem desejo de desenvolver projetos de pesquisa, está desenvolvendo um trabalho de educação e promoção à saúde bucal nas escolas do município. </p>"
+                }
+            },
+            "mapMarker10": {
+                "cordX": "4",
+                "cordY": "30",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Maria das Graças",
+                    "content": "<p> Auxiliar de saúde bucal do consultório dentário, prestativa, sempre dá um jeitinho em tudo, mas às vezes tem problemas por se envolver nos problemas dos outros e fazer comentários, pois como diz ela mesma: fofoca é a notícia de amanhã, e eu adoro fofocar. </p>"
+                }
+            },
+            "mapMarker11": {
+                "cordX": "20",
+                "cordY": "9",
+                "icon": "images/plus.svg",
+                "modal": {
+                    "title": "Luciana",
+                    "content": "<p>Assistente administrativa, sempre animada, acha que tudo vai dar certo, é muito religiosa, e faz trabalho voluntário na comunidade próxima a sua igreja.</p>"
+                }
+            }
+
+        };
+
+        (function($) {
+
+        $(document).ready(function(){ 
+
+            createKBmap('mandala', 'images/mandala.png'); // creates map
+
+            mandala.importJSON(json); // import json data into map
+            
+            mandala.showAllMapMarkers(); // show all markers stored in map object
+
+        });
+
+        })(jQuery);
+    </script>
+
+<div class="container d-flex justify-content-center flex-column" id="footer">
+	<hr><img src="images/regua-sifilisnao.png" alt="" class="img-responsive center-block" id="parceiros"> </hr>
+</div>
+
+</body>
+</html>
