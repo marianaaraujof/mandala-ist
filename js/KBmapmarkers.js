@@ -96,7 +96,9 @@ function MapMarker(name, icon, cordX, cordY, map){
 	}
 	
 	this.activate = function(){
+
 		jQuery('[data-marker-name="' + this.name + '"]').addClass('active');
+
 	}
 
 	this.deactivate = function(){
@@ -176,6 +178,13 @@ function MarkerModal(modalTitle, content, linkedMapMarker){
 	}
 
 	this.openModal = function(){
+
+		$( ".KBmap__marker" ).each(function( index, element ) {
+			//console.log(element.childNodes(".KBmap__markerContent"));
+			$(element).removeClass('active');
+			$(element).find(".KBmap__markerContent").css('display:none');
+			
+		});
 
 		this.linkedMapMarker.activate();
 
